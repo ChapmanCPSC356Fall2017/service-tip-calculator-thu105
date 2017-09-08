@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Service Tip Calculator</string>
+    <string name="totalHint">Enter the total amount</string>
+    <string name="tip_temp">Tip Percent: 0%\nCash Charged: $0.00\nTip Amount: $0.00\nTotal Sum: $0.00\n</string>
+</resources>
