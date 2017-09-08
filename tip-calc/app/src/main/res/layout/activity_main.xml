@@ -14,7 +14,6 @@
         android:textSize="20sp"
         android:gravity="right"
         android:text="@string/tip_temp"
-        android:padding="10dp"
         />
     <TextView
         android:id="@id/tv_rating"
