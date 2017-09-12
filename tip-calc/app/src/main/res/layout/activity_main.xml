@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+
     tools:context="heinmoethu.servicetipcalculator.MainActivity">
     <TextView
         android:id="@+id/tv_tip"
         android:layout_width="wrap_content"
-        android:layout_height="140sp"
+        android:layout_height="120sp"
         android:textSize="20sp"
         android:gravity="right"
         android:text="@string/tip_temp"
@@ -20,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please rate the service"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tipTextView;
     private EditText totalamtEditText;
     private RatingBar ratingRatingBar;
-    private final String s = "Tip Percent:\t%.0f%%\nCash Charged:\t$%.2f\nTip Amount:\t$%.2f\nTotal Sum:\t$%.2f\n";
+    private final String s = "Tip Percent:\t%.0f%%\nCash Charged:\t$%.2f\nTip Amount:\t$%.2f\nTotal Sum:\t$%.2f";
     private final double[] values={0,0}; // represents total amount and tip percentage in that order
 
     @Override
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 String e = editable.toString();
                 //updates the total charged
-                if(!e.equals(""))
+                if(!e.equals("")&&!e.equals("."))//catching possible exceptions in parsing
                     values[0]=Double.parseDouble(editable.toString());
                 else
                     values[0]=0;
